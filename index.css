@@ -1,8 +1,18 @@
 @font-face {
     font-family: OpenSans;
     src: url("fonts/OpenSans-Variable.woff2") format("woff2"),
-         url("fonts/OpenSans-Variable.woff") format("woff");    
+         url("fonts/OpenSans-Variable.woff") format("woff"); 
+         font-weight: normal;
+         font-style: normal;
+         font-display: swap;   
 }
+
+@font-face {
+    font-family: 'WarnockPro-Regular';
+    src: url("fonts/WarnockPro-Regular.woff") format("woff"),
+     
+}
+
 
 @font-face {
     font-family: 'Roboto-Bold';
@@ -27,7 +37,7 @@ body {
     font-family: 'Lato-Regular';
     font-style: normal;
     color: #000;
-    width: 90%;
+    width: 100%;
 }
 
 h1, h2 {
@@ -210,6 +220,7 @@ header {
     margin: 0 0 0.75em 0;
 }
 
+
 .overview-section {
     margin-top: 2em;
     padding-bottom: 4em;
@@ -270,7 +281,7 @@ header {
 }
 
 .blue-box {
-    font-family: OpenSans;
+    font-family: 'OpenSans';
     margin: 1em 5em;
     padding: 0.5em;
     background-color: #a8e7f0;
@@ -339,7 +350,10 @@ header {
 }
 
 .ligature {
-    font-variant-ligatures: common-ligatures;
+    font-family:'WarnockPro-Regular';
+    font-variant-ligatures: discretionary-ligatures ;
+    -moz-font-feature-settings: 'dlig';
+    -webkit-font-feature-settings: 'dlig';
 }
 
 .kerning {
@@ -385,7 +399,7 @@ footer {
 
 @media (min-width: 440px) and (max-width: 1065px) {
     body {
-        width: 90%;
+        width: 100%;
     }
 }
 
