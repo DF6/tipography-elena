@@ -55,7 +55,7 @@
             <h2>All Caps</h2>
             <div class="content">
                 <span class="content-text left">
-                    With both OpenType and other fonts, this function formats the text in uppercase. With OpenType fonts, it also applies ‘Case Sensitive Forms’ OpenType layout features for alternate uppercase positioning of punctuation, and spacing designed for <span class="italic no-spaces">all-cap</span> use (not when text is typed in caps).
+                    With both OpenType and other fonts, this function formats the text in uppercase. With OpenType fonts, it also applies ‘Case Sensitive Forms’ OpenType layout features for alternate uppercase positioning of punctuation, and spacing designed for <em class="no-spaces">all-cap</em> use (not when text is typed in caps).
                 </span>
                 <div class="boxes">
                     <span class="blue-box capitalize">all caps</span>
@@ -81,8 +81,8 @@
                     </span>
                 </div>
                 <span class="content-text right">
-                    <span class="italic no-spaces blue-text">Tabular Lining Figures | Proportional Lining Fig | Tabular OSF | Proportional OSF</span>
-                    Tabular <span class="italic no-spaces">figures</span> are of equal width and needed when they must line up from one line to the next. Proportional figures have varying widths. Lining figures are all the same height. <span class="italic no-spaces">Oldstyle</span> figures have varying height.
+                    <em class="no-spaces blue-text">Tabular Lining Figures | Proportional Lining Fig | Tabular OSF | Proportional OSF</em>
+                    Tabular <em class="no-spaces">figures</em> are of equal width and needed when they must line up from one line to the next. Proportional figures have varying widths. Lining figures are all the same height. <em class="no-spaces">Oldstyle</em> figures have varying height.
                 </span>
             </div>
         </article>
@@ -90,7 +90,7 @@
             <h2>Fractions</h2>
             <div class="content">
                 <span class="content-text">
-                    Turns on <span class="italic no-spaces">fractions</span>. Any given number followed by a slash and another number will automatically turn into fractions.
+                    Turns on <em class="no-spaces">fractions</em>. Any given number followed by a slash and another number will automatically turn into fractions.
                 </span>
                 <div class="boxes">
                     <span class="blue-box">
@@ -122,7 +122,7 @@
                     </span>
                 </div>
                 <span class="content-text">
-                    Substitutes all figures and <span class="italic no-spaces">lowercase letters</span> (if present) with their superior letterforms, wich can be used for footnotes references, etc. These designed glyphs match the weight of the regular letters and numbers, they are spaced more generously and therefore are more legible than scaled characters.
+                    Substitutes all figures and <em class="no-spaces">lowercase letters</em> (if present) with their superior letterforms, wich can be used for footnotes references, etc. These designed glyphs match the weight of the regular letters and numbers, they are spaced more generously and therefore are more legible than scaled characters.
                 </span>
             </div>
         </article>
@@ -130,7 +130,7 @@
             <h2>Slashed Zero</h2>
             <div class="content">
                 <span class="content-text">
-                    Originally created to avoid the confusion between the 0 and the O, this feature substitutes <span class="italic no-spaces">all zeros</span> in a selected text by a slashed form of the zero.
+                    Originally created to avoid the confusion between the 0 and the O, this feature substitutes <em class="no-spaces">all zeros</em> in a selected text by a slashed form of the zero.
                 </span>
                 <div class="boxes">
                     <span class="blue-box">0<span class="subscript">0</span></span>
@@ -147,7 +147,7 @@
                 </div>
                 <span class="content-text">
                     <span class="italic blue-text">Standard ligatures</span>
-                    <span class="italic no-spaces">Standard ligatures</span> are glyphs which are designed to improve the kerning and readability of certain letter pairs. For example, when this feature is activated, typing ‘f’ and ‘i’ will automatically produce the ‘fi’ ligature.
+                    <em class="no-spaces">Standard ligatures</em> are glyphs which are designed to improve the kerning and readability of certain letter pairs. For example, when this feature is activated, typing ‘f’ and ‘i’ will automatically produce the ‘fi’ ligature.
                 </span>
             </div>
         </article>
@@ -155,7 +155,7 @@
             <h2>Stylistic Set</h2>
             <div class="content">
                 <span class="content-text">
-                    This feature will activate some <span class="italic no-spaces">alternative glyphs</span> which can be activated by turning on ‘Stylistic Alternates’ in Adobe Illustrator and Photoshop, or on the other hand by selecting ‘Stylistic Set 1’ in InDesign.
+                    This feature will activate some <em class="no-spaces">alternative glyphs</em> which can be activated by turning on ‘Stylistic Alternates’ in Adobe Illustrator and Photoshop, or on the other hand by selecting ‘Stylistic Set 1’ in InDesign.
                 </span>
                 <div class="boxes">
                     <span class="blue-box">aáâäàåãæ </span>
@@ -171,26 +171,26 @@
                     <span class="blue-box alternate">5x5</span>
                 </div>
                 <span class="content-text">
-                    This feature substitutes a glyph or a <span class="italic no-spaces">combination of glyphs</span> that only occur depending on what letters are nearby. For instance the letter ‘x’ placed after a number will be replaced by the ‘multiplication’ glyph. If the font has arrows, you will be able to display them by typing a combination of letter on your keyboard like ‘hyphen + greater-than’ or ‘hyphen + less-than.’ This feature is usually on by default in Adobe applications.
+                    This feature substitutes a glyph or a <em class="no-spaces">combination of glyphs</em> that only occur depending on what letters are nearby. For instance the letter ‘x’ placed after a number will be replaced by the ‘multiplication’ glyph. If the font has arrows, you will be able to display them by typing a combination of letter on your keyboard like ‘hyphen + greater-than’ or ‘hyphen + less-than.’ This feature is usually on by default in Adobe applications.
                 </span>
             </div>
         </article>
         <article class="overview-section">
             <h1>Overview and sample code for accessing<br/>OpenType features in CSS</h1>
             <span class="description">
-                The CSS3 Specification defines two ways of accessing OpenType features in CSS: <span class="bold">high-level</span> and <span class="bold">low-level</span> properties.
+                The CSS3 Specification defines two ways of accessing OpenType features in CSS: <strong>high-level</strong> and <strong>low-level</strong> properties.
             </span>
             <section class="levels">
                 <div class="level">
                     <h1>High-level</h1>
                     <span>
-                        <span class="bold">High-level</span> properties are independent of font format and have semantic, human-readable names. The specification recommends authors to use these properties whenever possible – but not all browsers support them yet.
+                        <strong>High-level</strong> properties are independent of font format and have semantic, human-readable names. The specification recommends authors to use these properties whenever possible – but not all browsers support them yet.
                     </span>
                 </div>
                 <div class="level">
                     <h1>Low-level</h1>
                     <span>
-                        The <span class="bold">low-level</span> property font-feature-settings is specific to OpenType fonts. It offers an easy way to access OpenType features directly using standard 4-letter tags. This property is supported by the latest versions of all major browsers.
+                        The <strong>low-level</strong> property font-feature-settings is specific to OpenType fonts. It offers an easy way to access OpenType features directly using standard 4-letter tags. This property is supported by the latest versions of all major browsers.
                     </span>
                 </div>
             </section>
